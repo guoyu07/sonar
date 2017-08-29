@@ -5,7 +5,7 @@
 # author: ZhongWen Li (mailto:lizw@primeton.com)
 #
 
-FROM sonarqube:latest
+FROM sonarqube:lts
 
 LABEL maintainer="lizw@primeton.com" \
     provider="Primeton Technologies, Ltd."
