@@ -39,7 +39,7 @@ RUN set -x \
 
 
 RUN \rm -f ${SONARQUBE_HOME}/extensions/plugins \
-    && curi -o /tmp/plugins.tar.gz -fSL https://doc-0g-bc-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/6c24mo8qfvi34qo8r1t9lau66012eo0i/1504252800000/05713710580929286757/*/0B8p5w2HKib3OVUlScXZKUjRoYk0?e=download \
+    && curl -o /tmp/plugins.tar.gz -fSL https://doc-0g-bc-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/6c24mo8qfvi34qo8r1t9lau66012eo0i/1504252800000/05713710580929286757/*/0B8p5w2HKib3OVUlScXZKUjRoYk0?e=download \
     && tar -zvxf /tmp/plugins.tar.gz -C ${SONARQUBE_HOME}/extensions/ \
     && \rm -f /tmp/plugins.tar.gz
 
